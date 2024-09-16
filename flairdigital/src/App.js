@@ -1,10 +1,14 @@
-import './App.css';
-import Sidenav from './components/Sidenav/Sidenav';
+import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
+import MenuBar from "./components/MenuBar";
 
 function App() {
   return (
-    <div>
-       <Sidenav/>
+    <div className="App">
+      <Navbar />
+      <MenuBar/>
+      <Footer/>
+      
     </div>
   );
 }
