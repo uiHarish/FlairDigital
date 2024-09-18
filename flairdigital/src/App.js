@@ -1,17 +1,21 @@
+import React, { useState } from "react";
 import Navbar from "./components/Navbar/NavBar";
 import Footer from "./components/Footer/Footer";
-import MenuBar from "./components/Menubar/MenuBar";
-// import logo from './logo.svg';
+import ProductList from "./components/ProductList";
 import './App.css';
-import ProductList from './components/ProductList';
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const handleAddToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
+  };
+
   return (
     <div className="App">
-      <Navbar />
-      <MenuBar/>
-      <Footer/>
-      <ProductList/>
+      <Navbar cart={cart} />
+      <ProductList handleAddToCart={handleAddToCart} />
+      <Footer />
     </div>
   );
 }

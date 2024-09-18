@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./productList.scss"; 
 
-
-
-const ProductList = () => {
+const ProductList = ({ handleAddToCart }) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [fetchedProducts, setFetchedProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -15,7 +12,7 @@ const ProductList = () => {
         const response = await fetch("/ProductList-mock.json");
         const data = await response.json();
         setFetchedProducts(data);
-        console.log(data)
+        console.log(data);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -48,11 +45,6 @@ const ProductList = () => {
     setSelectedProduct(null);
   };
 
-  const handleAddToCart = (e, product) => {
-    e.stopPropagation(); // Prevents the click from being registered on the product card
-    setCart([...cart, product]);
-  };
-
   return (
     <div>
       <nav>
@@ -66,14 +58,6 @@ const ProductList = () => {
         </button>
         <button onClick={() => handleCategoryChange("homeAppliances")}>
           Home Appliances
-        </button>
-        <button
-          className="cart-button"
-          onClick={() =>
-            alert("Cart: " + cart.map((item) => item.name).join(", "))
-          }
-        >
-          View Cart ({cart.length})
         </button>
       </nav>
 
@@ -89,13 +73,11 @@ const ProductList = () => {
             <p>
               <strong>Price:</strong> {product.price}
             </p>
-            {/* Add Rating */}
             <p>
               <strong>Rating:</strong> {product.rating} ★
             </p>
-            {/* Add to Cart Button */}
             <button
-              onClick={(e) => handleAddToCart(e, product)}
+              onClick={(e) => handleAddToCart(product)} 
               className="add-to-cart-button"
             >
               Add to Cart
@@ -103,31 +85,6 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-
-      {selectedProduct && (
-        <div className="popup-overlay" onClick={handleClosePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button onClick={handleClosePopup} className="popup-close-button">
-              ×
-            </button>
-            <img
-              src={selectedProduct.image}
-              alt={selectedProduct.name}
-              style={{ width: "100%", height: "auto", borderRadius: "8px" }}
-            />
-            <h2>{selectedProduct.name}</h2>
-            <p>
-              <strong>Description:</strong> {selectedProduct.description}
-            </p>
-            <p>
-              <strong>Price:</strong> {selectedProduct.price}
-            </p>
-            <p>
-              <strong>Rating:</strong> {selectedProduct.rating} ★
-            </p>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
