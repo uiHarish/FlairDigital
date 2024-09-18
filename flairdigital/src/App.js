@@ -1,6 +1,6 @@
-import Navbar from "./components/NavBar";
-import Footer from "./components/Footer";
-import MenuBar from "./components/MenuBar";
+import Navbar from "./components/Navbar/NavBar";
+import Footer from "./components/Footer/Footer";
+import MenuBar from "./components/Menubar/MenuBar";
 
 function App() {
   return (
@@ -8,7 +8,6 @@ function App() {
       <Navbar />
       <MenuBar/>
       <Footer/>
-      
     </div>
   );
 }
