@@ -1,24 +1,18 @@
-/* Sidenav.css */
 
-.p-sidebar {
-    width: 250px;
-  }
-  
-  .p-sidebar h3 {
-    color: #007ad9;
-    margin-bottom: 1rem;
-  }
-  
-  .p-button-text {
-    width: 100%;
-    text-align: left;
-  }
+.sidebar-container {
+  width: 150px; 
+  background-color: #f8f9fa; 
+  padding: 1rem; 
+  position: fixed; 
+  height: 100%; 
+  overflow-y: auto; 
+}
+
+.p-button-text {
+  width: 100%;
+  text-align: left;
+}
+
 .dropdown-container {
   margin: 10px 0;
 }
-
-.p-dropdown {
-  width: 100%;
-}
-
-  

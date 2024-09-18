@@ -4,6 +4,8 @@ import MenuBar from "./components/Menubar/MenuBar";
 // import logo from './logo.svg';
 import './App.css';
 import ProductList from './components/ProductList';
+import Sidenav from "./components/Sidenav/Sidenav";
+// import Sidenav from "./components/Sidenav/sidenav";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <MenuBar/>
       <Footer/>
       <ProductList/>
+      <Sidenav/>
     </div>
   );
 }
