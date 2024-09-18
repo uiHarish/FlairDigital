@@ -26,7 +26,8 @@ const Login = ({ open, handleClose }) => {
     }
   };
   const handleSubmit = async () => {
-    const usernameRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // const usernameRegex     = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const usernameRegex = /^[a-zA-Z0-9_.-]*$/;
     // const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
     const passwordRegex =
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -67,6 +68,11 @@ const Login = ({ open, handleClose }) => {
         );
         const result = await response.json();
         console.log("res==>", result);
+        if (result && result.error.includes("username")) {
+          setErrors({ usernameError: result.error, passwordError: "" });
+        } else if (result && result.error.includes("password")) {
+          setErrors({ usernameError: "", passwordError: result.error });
+        }
       } catch (err) {
         console.log("Error", err);
       }
@@ -86,13 +92,15 @@ const Login = ({ open, handleClose }) => {
       <div className="login">
         <div className="flex flex-column gap-3 inputText">
           {/* <FloatLabel> */}
-          <label className="text-base" htmlFor="username">Username</label>
-            <InputText
-              id="username"
-              className="inputText"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
+          <label className="text-base" htmlFor="username">
+            Username
+          </label>
+          <InputText
+            id="username"
+            className="inputText"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
           {/* </FloatLabel> */}
 
           {errors.usernameError && (
@@ -104,16 +112,16 @@ const Login = ({ open, handleClose }) => {
         <div className="flex flex-column gap-2 inputText margin">
           {/* <FloatLabel> */}
           <label htmlFor="password">Password</label>
-            <Password
-              id="password"
-              className="inputText"
-              // aria-describedby="password-help"
-              // placeholder="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              toggleMask
-              feedback={false}
-            />
+          <Password
+            id="password"
+            className="inputText"
+            // aria-describedby="password-help"
+            // placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            toggleMask
+            feedback={false}
+          />
           {/* </FloatLabel> */}
           {errors.passwordError && (
             <small id="password-help" style={{ color: "red" }}>
