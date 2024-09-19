@@ -1,107 +1,124 @@
-import React, { useState } from 'react';
-import { Sidebar } from 'primereact/sidebar';
-import { Button } from 'primereact/button';
+import React, { useState } from "react";
+import { Button } from "primereact/button";
+import { Slider } from "primereact/slider"; 
 import 'primereact/resources/themes/lara-light-indigo/theme.css';  
 import 'primereact/resources/primereact.min.css';                 
 import 'primeicons/primeicons.css';                                
-import './Sidenav.css';
+import './Sidenav.scss';
 
-const Sidenav = () => {
-    const [visible, setVisible] = useState(false);
-    const [isFilterClicked, setIsFilterClicked] = useState(false);
-    const [isBrandClicked, setIsBrandClicked] = useState(false);
+const Sidenav = ({ onPriceRangeChange }) => {
+    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [priceRange, setPriceRange] = useState([0, 100000]); 
 
-    // Range options as an array
-    const rangeOptions = [
-        '0 - 10,000',
-        '10,001 - 20,000',
-        '20,001 - 30,000',
-        '30,001 - 50,000',
-        '50,001 - 100,000'
-    ];
-
-    // Brand options as an array
     const brandOptions = [
         'Samsung', 'Apple', 'Vivo', 'Oppo', 'Mi'
     ];
 
-    // Handle range selection and hide options
-    const handleRangeSelect = (range) => {
-        console.log('Selected range:', range);
-        setIsFilterClicked(false); // Hide range options after selection
+    const settingsOptions = [
+        'Profile Settings',
+        'Account Settings'
+    ];
+
+    const handleDropdownToggle = (dropdown) => {
+        setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
     };
 
-    // Handle brand selection and hide options
-    const handleBrandSelect = (brand) => {
-        console.log('Selected brand:', brand);
-        setIsBrandClicked(false); // Hide brand options after selection
-    };
-
-    // Handle sidebar close, reset dropdown visibility
-    const handleSidebarHide = () => {
-        setVisible(false);
-        setIsFilterClicked(false); // Close filter dropdown
-        setIsBrandClicked(false); // Close brand dropdown
+    const handleSliderChange = (values) => {
+        setPriceRange(values);
+        const rangeString = `${values[0]} - ${values[1]}`; 
+        onPriceRangeChange(rangeString); 
     };
 
     return (
-        <div>
-            {/* Main button to toggle sidebar */}
-            <Button icon="pi pi-bars" onClick={() => setVisible(true)} />
-            
-            {/* Sidebar component */}
-            <Sidebar visible={visible} onHide={handleSidebarHide}>
-                <h3>Menu</h3>
-                <Button icon="pi pi-home" label="Home" className="p-button-text" />
-                
-                {/* Filter Button to trigger dropdown */}
-                <Button 
-                    icon="pi pi-filter" 
-                    label="Filter" 
-                    className="p-button-text"
-                    onClick={() => setIsFilterClicked(!isFilterClicked)} 
-                />
+        <div className="sidenav">
+            <Button 
+                icon="pi pi-home" 
+                label="Home" 
+                className="p-button-text" 
+                onClick={() => setActiveDropdown(null)} 
+            />
 
-                {/* Conditionally render the range options dynamically */}
-                {isFilterClicked && (
-                    <div className="dropdown-container">
-                        {rangeOptions.map((range, index) => (
-                            <Button 
-                                key={index} 
-                                label={range} 
-                                className="p-button-text dynamic-option" 
-                                onClick={() => handleRangeSelect(range)} 
-                            />
-                        ))}
+            <Button 
+                icon="pi pi-filter" 
+                label="Filter" 
+                className="p-button-text"
+                onClick={() => handleDropdownToggle('filter')} 
+            />
+            {activeDropdown === 'filter' && (
+                <div className="dropdown-container">
+                    <div className="slider-container">
+                        <Slider
+                            value={priceRange}
+                            onChange={(e) => handleSliderChange(e.value)}
+                            range
+                            min={0}
+                            max={100000}
+                            step={1000}
+                        />
+                        <div className="slider-labels">
+                            <span>{priceRange[0]}</span>
+                            <span>{priceRange[1]}</span>
+                        </div>
                     </div>
-                )}
+                </div>
+            )}
 
-                {/* Brand Button to trigger dropdown */}
-                <Button 
-                    icon="pi pi-plus" 
-                    label="Brand" 
-                    className="p-button-text"
-                    onClick={() => setIsBrandClicked(!isBrandClicked)}
-                />
+            <Button 
+                icon="pi pi-plus" 
+                label="Brand" 
+                className="p-button-text"
+                onClick={() => handleDropdownToggle('brand')}
+            />
+            {activeDropdown === 'brand' && (
+                <div className="dropdown-container">
+                    {brandOptions.map((brand, index) => (
+                        <div 
+                            key={index} 
+                            className="filter-option"
+                        >
+                            {brand}
+                        </div>
+                    ))}
+                </div>
+            )}
 
-                {/* Conditionally render the brand options dynamically */}
-                {isBrandClicked && (
-                    <div className="dropdown-container">
-                        {brandOptions.map((brand, index) => (
-                            <Button 
-                                key={index} 
-                                label={brand} 
-                                className="p-button-text dynamic-option" 
-                                onClick={() => handleBrandSelect(brand)} 
-                            />
-                        ))}
-                    </div>
-                )}
+            <Button 
+                icon="pi pi-cog" 
+                label="Settings" 
+                className="p-button-text" 
+                onClick={() => handleDropdownToggle('settings')}
+            />
+            {activeDropdown === 'settings' && (
+                <div className="dropdown-container">
+                    {settingsOptions.map((setting, index) => (
+                        <div 
+                            key={index} 
+                            className="filter-option"
+                        >
+                            {setting}
+                        </div>
+                    ))}
+                </div>
+            )}
 
-                <Button icon="pi pi-address-book" label="Contact" className="p-button-text" />
-                <Button icon="pi pi-at" label="Support" className="p-button-text" />
-                <Button icon="pi pi-wallet" label="Wallet" className="p-button-text" />
-            </Sidebar>
+            <Button 
+                icon="pi pi-address-book" 
+                label="Contact" 
+                className="p-button-text" 
+                onClick={() => setActiveDropdown(null)} 
+            />
+            <Button 
+                icon="pi pi-at" 
+                label="Support" 
+                className="p-button-text" 
+                onClick={() => setActiveDropdown(null)} 
+            />
+            <Button 
+                icon="pi pi-wallet" 
+                label="Wallet" 
+                className="p-button-text" 
+                onClick={() => setActiveDropdown(null)} 
+            />
         </div>
     );
 };

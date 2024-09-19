@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './NavBar.scss'; 
-import logo from '../../assets/logo.png'; 
-// import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import fdLogo from '../../assets/fdLogo.png'; 
 import 'primeicons/primeicons.css';
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null); 
   const profileRef = useRef(null); 
@@ -29,14 +27,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logo} alt="Logo" className='logoStyles'/> 
+        <img src={fdLogo} alt="Logo" className='logoStyles'/> 
       </div>
       <div className="navbar-search">
         <input type="text" placeholder="Search..." />
       </div>
       <div className="navbar-icons">
         <div className="navbar-icon" onClick={toggleDropdown} ref={profileRef}>
-          {/* <PermIdentityIcon fontSize="large"/> */}
           <i className="pi pi-user" style={{ fontSize: '2rem' }}></i>
           {isDropdownOpen && (
             <div className="dropdown-menu" ref={dropdownRef}>
@@ -45,10 +42,18 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <a href="/cart" className="navbar-icon"><i className="pi pi-shopping-cart" style={{ fontSize: '2rem' }}></i></a>
+        <a href="/cart" className="navbar-icon">
+          <i className="pi pi-shopping-cart" style={{ fontSize: '2rem' }}></i>
+          {cart.length > 0 && <span>({cart.length})</span>}
+        </a>
       </div>
     </nav>
   );
+};
+
+
+Navbar.defaultProps = {
+  cart: [],
 };
 
 export default Navbar;
