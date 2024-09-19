@@ -17,10 +17,8 @@ const ProjectRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signUp" element={<SignUpForm />} />
-
         <Route path="/forgotPassword" element={<ForgotPassword/>} /> 
         <Route path="/products" element={<AddProduct />} />
-
       </Routes>
     </Router>
   );
