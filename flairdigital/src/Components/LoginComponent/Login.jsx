@@ -132,7 +132,7 @@ const Login = ({ open, handleClose }) => {
 
         {/* <InputText className="inputText" placeholder="Username" />
         <InputText className="inputText" placeholder="Password" /> */}
-        <a href="/" className="fontColor">
+        <a href="/forgotPassword" className="fontColor">
           Forgot Password
         </a>
         <div className="loginButtons">
