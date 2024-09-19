@@ -160,7 +160,7 @@ const Login = ({ open, handleClose }) => {
         </div>
         <p>
           Don’t have an account yet?{" "}
-          <a href="/" className="fontColor">
+          <a href="/signUP" className="fontColor">
             {" "}
             Sign up
           </a>
