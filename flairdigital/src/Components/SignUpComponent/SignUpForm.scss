@@ -1,0 +1,90 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // Full screen height
+  background-color: #f0f2f5;
+
+  .signup-form-card {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); // Card-like shadow
+    width: 100%;
+    max-width: 500px; // Adjust max-width if needed
+    margin: 1rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .form-label {
+      font-weight: 500;
+      color: #555;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+
+      .flex-item {
+        flex: 1;
+        margin-right: 1rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .btn-primary {
+      width: 100%;
+      background-color: #007bff;
+      border: none;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .input-group-text {
+      cursor: pointer;
+      background-color: #f5f5f5;
+      border: 1px solid #ced4da;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      input[type='checkbox'] {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        accent-color: #007bff; // Custom accent color for the checkbox
+        cursor: pointer;
+      }
+
+      label {
+        font-size: 0.9rem;
+        color: #333;
+        cursor: pointer;
+      }
+    }
+
+    .terms-error {
+      font-size: 0.875rem;
+      color: #dc3545;
+      margin-top: 0.5rem;
+    }
+
+    .invalid-feedback {
+      font-size: 0.875rem;
+      color: #dc3545;
+    }
+  }
+}
