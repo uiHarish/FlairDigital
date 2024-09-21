@@ -15,7 +15,6 @@ const ProductList = () => {
         const response = await fetch("/ProductList-mock.json");
         const data = await response.json();
         setFetchedProducts(data);
-        console.log(data)
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -49,7 +48,7 @@ const ProductList = () => {
   };
 
   const handleAddToCart = (e, product) => {
-    e.stopPropagation(); // Prevents the click from being registered on the product card
+    e.stopPropagation(); 
     setCart([...cart, product]);
   };
 
@@ -89,11 +88,11 @@ const ProductList = () => {
             <p>
               <strong>Price:</strong> {product.price}
             </p>
-            {/* Add Rating */}
+         
             <p>
               <strong>Rating:</strong> {product.rating} ★
             </p>
-            {/* Add to Cart Button */}
+        
             <button
               onClick={(e) => handleAddToCart(e, product)}
               className="add-to-cart-button"
