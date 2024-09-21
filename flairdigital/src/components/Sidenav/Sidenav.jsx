@@ -6,7 +6,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';                                
 import './Sidenav.scss';
 
-const Sidenav = ({ onPriceRangeChange }) => {
+const Sidenav = ({ onPriceRangeChange, onBrandChange }) => {
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [priceRange, setPriceRange] = useState([0, 100000]); 
 
@@ -27,6 +27,10 @@ const Sidenav = ({ onPriceRangeChange }) => {
         setPriceRange(values);
         const rangeString = `${values[0]} - ${values[1]}`; 
         onPriceRangeChange(rangeString); 
+    };
+
+    const handleBrandSelect = (brand) => {
+        onBrandChange(brand);
     };
 
     return (
@@ -75,6 +79,7 @@ const Sidenav = ({ onPriceRangeChange }) => {
                         <div 
                             key={index} 
                             className="filter-option"
+                            onClick={() => handleBrandSelect(brand)}
                         >
                             {brand}
                         </div>

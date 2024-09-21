@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./productList.scss"; 
 
-const ProductList = ({ handleAddToCart, selectedPriceRange }) => {
+const ProductList = ({ handleAddToCart, selectedPriceRange, selectedBrand }) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [fetchedProducts, setFetchedProducts] = useState([]);
 
@@ -22,7 +22,7 @@ const ProductList = ({ handleAddToCart, selectedPriceRange }) => {
   const getProductsToShow = () => {
     let productsToShow = [];
 
-    
+    // Combine all products if "all" category is selected
     if (selectedCategory === "all") {
       productsToShow = [
         ...(fetchedProducts.mobiles || []),
@@ -34,7 +34,7 @@ const ProductList = ({ handleAddToCart, selectedPriceRange }) => {
       productsToShow = fetchedProducts[selectedCategory] || [];
     }
 
-    
+    // Filter by price range if provided
     if (selectedPriceRange) {
       const [min, max] = selectedPriceRange.split(' - ').map(Number);
       productsToShow = productsToShow.filter(product => {
@@ -43,12 +43,15 @@ const ProductList = ({ handleAddToCart, selectedPriceRange }) => {
       });
     }
 
-   
-    console.log("Selected Price Range:", selectedPriceRange);
-    console.log("Products to show:", productsToShow);
-    
+    // Filter by selected brand if provided
+    if (selectedBrand) {
+      productsToShow = productsToShow.filter(product => product.brand === selectedBrand);
+    }
+
     return productsToShow;
   };
+
+  const productsToShow = getProductsToShow();
 
   return (
     <div>
@@ -65,17 +68,21 @@ const ProductList = ({ handleAddToCart, selectedPriceRange }) => {
       </nav>
 
       <div className="product-grid">
-        {getProductsToShow().map((product) => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p><strong>Price:</strong> ${product.price}</p>
-            <p><strong>Rating:</strong> {product.rating} ★</p>
-            <button onClick={() => handleAddToCart(product)} className="add-to-cart-button">
-              Add to Cart
-            </button>
-          </div>
-        ))}
+        {productsToShow.length > 0 ? (
+          productsToShow.map((product) => (
+            <div key={product.id} className="product-card">
+              <img src={product.image} alt={product.name} />
+              <h3>{product.name}</h3>
+              <p><strong>Price:</strong> ${product.price}</p>
+              <p><strong>Rating:</strong> {product.rating} ★</p>
+              <button onClick={() => handleAddToCart(product)} className="add-to-cart-button">
+                Add to Cart
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>No products found matching your criteria.</p>
+        )}
       </div>
     </div>
   );
