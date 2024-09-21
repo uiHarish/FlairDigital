@@ -113,7 +113,7 @@ const ProductList = () => {
             <img
               src={selectedProduct.image}
               alt={selectedProduct.name}
-              style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              style={{ width: "50%", height: "30%", borderRadius: "8px"}}
             />
             <h2>{selectedProduct.name}</h2>
             <p>
