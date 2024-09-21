@@ -1,0 +1,730 @@
+{
+    "mobiles": [
+        {
+            "id": 1,
+            "name": "Apple iPhone 15 Pro",
+            "image":"/digitalImages/Mobiles/Apple iPhone 15 Pro.jpg",
+            "price": "₹82,770",
+            "brand": "Apple",
+            "description": "The latest iPhone 15 Pro with A17 Pro chip, 6.1-inch Super Retina XDR display, and advanced camera system.",
+            "rating": 4.8
+        },
+        {
+            "id": 2,
+            "name": "Samsung Galaxy S23 Ultra",
+            "image":"/digitalImages/Mobiles/Samsung Galaxy S23 Ultra.jpg",
+            "price": "₹99,657",
+            "brand": "Samsung",
+            "description": "Galaxy S23 Ultra features a 6.8-inch Dynamic AMOLED display, Snapdragon 8 Gen 2, and a versatile quad-camera setup.",
+            "rating": 4.7
+        },
+        {
+            "id": 3,
+            "name": "Google Pixel 8 Pro",
+            "image":"/digitalImages/Mobiles/Google Pixel 8 Pro.jpg",
+            "price": "₹74,517",
+            "brand": "Google",
+            "description": "Pixel 8 Pro comes with Google Tensor G3, a 6.7-inch LTPO OLED display, and excellent computational photography.",
+            "rating": 4.6
+        },
+        {
+            "id": 4,
+            "name": "OnePlus 11T",
+            "image":"/digitalImages/Mobiles/OnePlus 11T.jpg",
+            "price": "₹62,104",
+            "brand": "OnePlus",
+            "description": "OnePlus 11T features a 6.7-inch AMOLED display, Snapdragon 8+ Gen 1, and a fast 120W charging capability.",
+            "rating": 4.5
+        },
+        {
+            "id": 5,
+            "name": "Xiaomi Mi 13 Pro",
+            "image":"/digitalImages/Mobiles/Xiaomi Mi 13 Pro.jpg",
+            "price": "₹70,445",
+            "brand": "Xiaomi",
+            "description": "Mi 13 Pro offers a 6.73-inch AMOLED display, Snapdragon 8 Gen 2, and a high-resolution triple camera system.",
+            "rating": 4.4
+        },
+        {
+            "id": 6,
+            "name": "Sony Xperia 1 V",
+            "image":"/digitalImages/Mobiles/Sony Xperia 1 V.jpg",
+            "price": "₹99,657",
+            "brand": "Sony",
+            "description": "Xperia 1 V features a 6.5-inch 4K OLED display, Snapdragon 8 Gen 2, and advanced camera features for professional use.",
+            "rating": 4.6
+        },
+        {
+            "id": 7,
+            "name": "Oppo Find X6 Pro",
+            "image":"/digitalImages/Mobiles/Oppo Find X6 Pro.jpg",
+            "price": "₹91,616",
+            "brand": "Oppo",
+            "description": "Find X6 Pro includes a 6.82-inch AMOLED display, Snapdragon 8 Gen 2, and an innovative triple camera system.",
+            "rating": 4.5
+        },
+        {
+            "id": 8,
+            "name": "Huawei Mate 60 Pro",
+            "image":"/digitalImages/Mobiles/Huawei Mate 60 Pro.jpg",
+            "price": "₹82,770",
+            "brand": "Huawei",
+            "description": "Mate 60 Pro offers a 6.74-inch OLED display, Kirin 9000, and a powerful camera system with advanced features.",
+            "rating": 4.4
+        },
+        {
+            "id": 9,
+            "name": "Motorola Edge 40 Pro",
+            "image":"/digitalImages/Mobiles/Motorola Edge 40 Pro.jpg",
+            "price": "₹70,445",
+            "brand": "Motorola",
+            "description": "Edge 40 Pro features a 6.67-inch OLED display, Snapdragon 8 Gen 2, and a high-performance camera system.",
+            "rating": 4.4
+        },
+        {
+            "id": 10,
+            "name": "Asus ROG Phone 7",
+            "image":"/digitalImages/Mobiles/Asus ROG Phone 7.jpg",
+            "price": "₹99,657",
+            "brand": "Asus",
+            "description": "ROG Phone 7 features a 6.78-inch AMOLED display, Snapdragon 8 Gen 2, and advanced cooling for gaming.",
+            "rating": 4.7
+        },
+        {
+            "id": 11,
+            "name": "Nokia X30",
+            "image":"/digitalImages/Mobiles/Nokia X30.jpg",
+            "price": "₹66,275",
+            "brand": "Nokia",
+            "description": "Nokia X30 offers a 6.43-inch AMOLED display, Snapdragon 695, and a focus on sustainability with eco-friendly materials.",
+            "rating": 4.3
+        },
+        {
+            "id": 12,
+            "name": "Realme GT 3",
+            "image":"/digitalImages/Mobiles/Realme GT 3.jpg",
+            "price": "₹57,969",
+            "brand": "Realme",
+            "description": "Realme GT 3 features a 6.74-inch AMOLED display, Snapdragon 8+ Gen 1, and fast 240W charging.",
+            "rating": 4.5
+        },
+        {
+            "id": 13,
+            "name": "Vivo X90 Pro",
+            "image":"/digitalImages/Mobiles/Vivo X90 Pro.jpg",
+            "price": "₹86,138",
+            "brand": "Vivo",
+            "description": "Vivo X90 Pro comes with a 6.78-inch AMOLED display, Dimensity 9200, and advanced imaging capabilities.",
+            "rating": 4.6
+        },
+        {
+            "id": 14,
+            "name": "Xiaomi Redmi Note 12",
+            "image":"/digitalImages/Mobiles/Xiaomi Redmi Note 12.jpg",
+            "price": "₹33,117",
+            "brand": "Xiaomi",
+            "description": "Redmi Note 12 features a 6.67-inch AMOLED display, Snapdragon 680, and a versatile camera setup.",
+            "rating": 4.2
+        },
+        {
+            "id": 15,
+            "name": "Samsung Galaxy A54",
+            "image":"/digitalImages/Mobiles/Samsung Galaxy A54.jpg",
+            "price": "₹45,591",
+            "brand": "Samsung",
+            "description": "Galaxy A54 includes a 6.4-inch AMOLED display, Exynos 1380, and a well-rounded camera system.",
+            "rating": 4.4
+        },
+        {
+            "id": 16,
+            "name": "Apple iPhone SE (2024)",
+            "image":"/digitalImages/Mobiles/Apple iPhone SE.jpg",
+            "price": "₹35,651",
+            "brand": "Apple",
+            "description": "iPhone SE (2024) offers the power of the A17 chip, 4.7-inch Retina HD display, and compact design.",
+            "rating": 4.5
+        },
+        {
+            "id": 17,
+            "name": "Google Pixel 7a",
+            "image":"/digitalImages/Mobiles/Google Pixel 7a.jpg",
+            "price": "₹41,306",
+            "brand": "Google",
+            "description": "Pixel 7a comes with Google Tensor G2, a 6.1-inch OLED display, and a solid camera system.",
+            "rating": 4.4
+        },
+        {
+            "id": 18,
+            "name": "Oppo Reno 9 Pro",
+            "image":"/digitalImages/Mobiles/Oppo Reno 9 Pro.jpg",
+            "price": "₹66,275",
+            "brand": "Oppo",
+            "description": "Reno 9 Pro features a 6.7-inch AMOLED display, Dimensity 8100, and a premium design with advanced features.",
+            "rating": 4.4
+        },
+        {
+            "id": 19,
+            "name": "Motorola Moto G73",
+            "image":"/digitalImages/Mobiles/Motorola Moto G73.jpg",
+            "price": "₹31,470",
+            "brand": "Motorola",
+            "description": "Moto G73 includes a 6.5-inch IPS LCD display, Dimensity 930, and a reliable performance at an affordable price.",
+            "rating": 4.3
+        },
+        {
+            "id": 20,
+            "name": "Sony Xperia 10 V",
+            "image":"/digitalImages/Mobiles/Sony Xperia 10 V.jpg",
+            "price": "₹41,306",
+            "brand": "Sony",
+            "description": "Xperia 10 V offers a 6.0-inch OLED display, Snapdragon 695, and a focus on multimedia features.",
+            "rating": 4.2
+        }
+    ],
+    "laptops": [
+        {
+            "id": 1,
+            "name": "Dell XPS 13",
+            "image":"/digitalImages/Laptops/Dell XPS 13.jpg",
+            "price": "₹1,07,227",
+            "brand": "Dell",
+            "description": "XPS 13 features a sleek design, Intel Core i7, 13.4-inch FHD+ display, and long battery life.",
+            "rating": 4.6
+        },
+        {
+            "id": 2,
+            "name": "Apple MacBook Air M2",
+            "image":"/digitalImages/Laptops/Apple MacBook Air M2.jpg",
+            "price": "₹99,657",
+            "brand": "Apple",
+            "description": "MacBook Air M2 offers a 13.6-inch Liquid Retina display, M2 chip, and improved performance in a lightweight design.",
+            "rating": 4.7
+        },
+        {
+            "id": 3,
+            "name": "HP Spectre x360",
+            "image":"/digitalImages/Laptops/HP Spectre x360.jpg",
+            "price": "₹1,16,197",
+            "brand": "HP",
+            "description": "Spectre x360 features a 13.5-inch OLED display, Intel Core i7, and a versatile 2-in-1 design.",
+            "rating": 4.7
+        },
+        {
+            "id": 4,
+            "name": "Lenovo ThinkPad X1 Carbon",
+            "image":"/digitalImages/Laptops/Lenovo ThinkPad X1 Carbon.jpg",
+            "price": "₹1,24,128",
+            "brand": "Lenovo",
+            "description": "ThinkPad X1 Carbon is known for its durability, Intel Core i7, 14-inch WQHD display, and business features.",
+            "rating": 4.8
+        },
+        {
+            "id": 5,
+            "name": "Asus ZenBook 14",
+            "image":"/digitalImages/Laptops/Asus ZenBook 14.jpg",
+            "price": "₹74,517",
+            "brand": "Asus",
+            "description": "ZenBook 14 includes a 14-inch FHD display, Intel Core i5, and a compact, portable design.",
+            "rating": 4.5
+        },
+        {
+            "id": 6,
+            "name": "Microsoft Surface Laptop 5",
+            "image":"/digitalImages/Laptops/Microsoft Surface Laptop 5.jpg",
+            "price": "₹82,770",
+            "brand": "Microsoft",
+            "description": "Surface Laptop 5 features a 13.5-inch PixelSense display, Intel Core i7, and a sleek, lightweight build.",
+            "rating": 4.6
+        },
+        {
+            "id": 7,
+            "name": "Acer Swift 3",
+            "image":"/digitalImages/Laptops/Acer Swift 3.jpg",
+            "price": "₹62,104",
+            "brand": "Acer",
+            "description": "Swift 3 includes a 14-inch FHD display, Intel Core i5, and offers good performance at a budget-friendly price.",
+            "rating": 4.4
+        },
+        {
+            "id": 8,
+            "name": "Razer Blade 15",
+            "image":"/digitalImages/Laptops/Razer Blade 15.jpg",
+            "price": "₹1,49,357",
+            "brand": "Razer",
+            "description": "Blade 15 is a high-performance gaming laptop with a 15.6-inch OLED display, Intel Core i7, and dedicated NVIDIA RTX graphics.",
+            "rating": 4.8
+        },
+        {
+            "id": 9,
+            "name": "MSI Prestige 14",
+            "image":"/digitalImages/Laptops/MSI Prestige 14.jpg",
+            "price": "₹99,657",
+            "brand": "MSI",
+            "description": "Prestige 14 features a 14-inch 4K display, Intel Core i7, and a stylish design for professionals.",
+            "rating": 4.5
+        },
+        {
+            "id": 10,
+            "name": "Samsung Galaxy Book 3",
+            "image":"/digitalImages/Laptops/Samsung Galaxy Book 3.jpg",
+            "price": "₹1,07,227",
+            "brand": "Samsung",
+            "description": "Galaxy Book 3 offers a 15.6-inch AMOLED display, Intel Core i7, and connectivity with Samsung devices.",
+            "rating": 4.6
+        },
+        {
+            "id": 11,
+            "name": "HP Envy 13",
+            "image":"/digitalImages/Laptops/HP Envy 13.jpg",
+            "price": "₹91,616",
+            "brand": "HP",
+            "description": "Envy 13 features a 13.3-inch FHD display, Intel Core i7, and a premium design with good performance.",
+            "rating": 4.5
+        },
+        {
+            "id": 12,
+            "name": "Apple MacBook Pro 16",
+            "image":"/digitalImages/Laptops/Apple MacBook Pro 16.jpg",
+            "price": "₹1,99,157",
+            "brand": "Apple",
+            "description": "MacBook Pro 16 includes a 16-inch Liquid Retina XDR display, M2 Max chip, and superior performance for demanding tasks.",
+            "rating": 4.9
+        },
+        {
+            "id": 13,
+            "name": "Dell Inspiron 14",
+            "image":"/digitalImages/Laptops/Dell Inspiron 14.jpg",
+            "price": "₹62,104",
+            "brand": "Dell",
+            "description": "Inspiron 14 features a 14-inch FHD display, Intel Core i5, and a balance of performance and affordability.",
+            "rating": 4.3
+        },
+        {
+            "id": 14,
+            "name": "Lenovo Yoga 7i",
+            "image":"/digitalImages/Laptops/Lenovo Yoga 7i.jpg",
+            "price": "₹91,616",
+            "brand": "Lenovo",
+            "description": "Yoga 7i is a 2-in-1 laptop with a 14-inch FHD touchscreen, Intel Core i7, and flexible design for versatile use.",
+            "rating": 4.5
+        },
+        {
+            "id": 15,
+            "name": "Asus ROG Strix Scar 17",
+            "image":"/digitalImages/Laptops/Asus ROG Strix Scar 17.jpg",
+            "price": "₹1,91,866",
+            "brand": "Asus",
+            "description": "ROG Strix Scar 17 offers a 17.3-inch 1440p display, Intel Core i9, and high-end NVIDIA RTX graphics for gaming.",
+            "rating": 4.8
+        },
+        {
+            "id": 16,
+            "name": "Acer Predator Helios 300",
+            "image":"/digitalImages/Laptops/Acer Predator Helios 300.jpg",
+            "price": "₹1,24,128",
+            "brand": "Acer",
+            "description": "Predator Helios 300 includes a 15.6-inch 144Hz display, Intel Core i7, and NVIDIA RTX graphics for gaming enthusiasts.",
+            "rating": 4.6
+        },
+        {
+            "id": 17,
+            "name": "Microsoft Surface Pro 9",
+            "image":"/digitalImages/Laptops/Microsoft Surface Pro 9.jpg",
+            "price": "₹1,07,227",
+            "brand": "Microsoft",
+            "description": "Surface Pro 9 is a versatile 2-in-1 with a 13-inch PixelSense display, Intel Core i7, and detachable keyboard.",
+            "rating": 4.6
+        },
+        {
+            "id": 18,
+            "name": "HP Pavilion 15",
+            "image":"/digitalImages/Laptops/HP Pavilion 15.jpg",
+            "price": "₹62,104",
+            "brand": "HP",
+            "description": "Pavilion 15 features a 15.6-inch FHD display, Intel Core i5, and a solid performance for everyday tasks.",
+            "rating": 4.3
+        },
+        {
+            "id": 19,
+            "name": "Apple MacBook Pro 13",
+            "image":"/digitalImages/Laptops/Apple MacBook Pro 13.jpg",
+            "price": "₹1,07,227",
+            "brand": "Apple",
+            "description": "MacBook Pro 13 comes with a 13.3-inch Retina display, M2 chip, and excellent performance in a compact design.",
+            "rating": 4.6
+        },
+        {
+            "id": 20,
+            "name": "Dell Latitude 7420",
+            "image":"/digitalImages/Laptops/Dell Latitude 7420.jpg",
+            "price": "₹1,24,128",
+            "brand": "Dell",
+            "description": "Latitude 7420 features a 14-inch FHD display, Intel Core i7, and a durable design for professional use.",
+            "rating": 4.5
+        }
+    ],
+    "electronicsAccessories": [
+        {
+            "id": 1,
+            "name": "Anker PowerCore 10000 Portable Charger",
+            "image":"/digitalImages/Accessecrios/Anker PowerCore 10000 Portable Charger.jpg",
+            "price": "₹2,895",
+            "brand": "Anker",
+            "description": "PowerCore 10000 provides a compact, high-capacity portable charging solution for smartphones and tablets.",
+            "rating": 4.6
+        },
+        {
+            "id": 2,
+            "name": "Belkin MagSafe Charger",
+            "image":"/digitalImages/Accessecrios/Belkin MagSafe Charger.jpg",
+            "price": "₹3,182",
+            "brand": "Belkin",
+            "description": "MagSafe Charger offers fast, efficient wireless charging for iPhone 12 and later models.",
+            "rating": 4.5
+        },
+        {
+            "id": 3,
+            "name": "Apple AirPods Pro (2nd Gen)",
+            "image":"/digitalImages/Accessecrios/Apple AirPods Pro (2nd Gen).jpg",
+            "price": "₹20,747",
+            "brand": "Apple",
+            "description": "AirPods Pro (2nd Gen) features active noise cancellation, improved sound quality, and a comfortable fit.",
+            "rating": 4.8
+        },
+        {
+            "id": 4,
+            "name": "Samsung Galaxy Buds2 Pro",
+            "image":"/digitalImages/Accessecrios/Samsung Galaxy Buds2 Pro.jpg",
+            "price": "₹18,694",
+            "brand": "Samsung",
+            "description": "Galaxy Buds2 Pro delivers high-quality sound with active noise cancellation and comfortable fit.",
+            "rating": 4.7
+        },
+        {
+            "id": 5,
+            "name": "Jabra Elite 7 Pro Earbuds",
+            "image":"/digitalImages/Accessecrios/Jabra Elite 7 Pro Earbuds.jpg",
+            "price": "₹16,483",
+            "brand": "Jabra",
+            "description": "Elite 7 Pro Earbuds offer excellent sound quality, active noise cancellation, and a secure fit.",
+            "rating": 4.6
+        },
+        {
+            "id": 6,
+            "name": "PopSocket Grip for Phones",
+            "image":"/digitalImages/Accessecrios/PopSocket Grip for Phones.jpg",
+            "price": "₹1,231",
+            "brand": "PopSocket",
+            "description": "PopSocket Grip enhances phone handling and provides a stand for hands-free viewing.",
+            "rating": 4.3
+        },
+        {
+            "id": 7,
+            "name": "Anker Wireless Charger",
+            "image":"/digitalImages/Accessecrios/Anker Wireless Charger.jpg",
+            "price": "₹2,047",
+            "brand": "Anker",
+            "description": "Wireless Charger offers convenient, fast charging for compatible devices without the need for cables.",
+            "rating": 4.4
+        },
+        {
+            "id": 8,
+            "name": "OtterBox Defender Series Case",
+            "image":"/digitalImages/Accessecrios/OtterBox Defender Series Case.jpg",
+            "price": "₹4,898",
+            "brand": "OtterBox",
+            "description": "Defender Series Case provides rugged protection against drops, dust, and scratches for your device.",
+            "rating": 4.5
+        },
+        {
+            "id": 9,
+            "name": "Logitech MX Master 3S Mouse",
+            "image":"/digitalImages/Accessecrios/Logitech MX Master 3S Mouse.jpg",
+            "price": "₹8,148",
+            "brand": "Logitech",
+            "description": "MX Master 3S offers precision tracking, customizable buttons, and ergonomic design for comfortable use.",
+            "rating": 4.7
+        },
+        {
+            "id": 10,
+            "name": "Apple Magic Keyboard",
+            "image":"/digitalImages/Accessecrios/Apple Magic Keyboard.jpg",
+            "price": "₹10,178",
+            "brand": "Apple",
+            "description": "Magic Keyboard features a sleek, compact design with a responsive typing experience and extended battery life.",
+            "rating": 4.6
+        },
+        {
+            "id": 11,
+            "name": "Razer BlackWidow V3 Keyboard",
+            "image":"/digitalImages/Accessecrios/Razer BlackWidow V3 Keyboard.jpg",
+            "price": "₹11,048",
+            "brand": "Razer",
+            "description": "BlackWidow V3 Keyboard offers mechanical switches, customizable RGB lighting, and durable construction for gamers.",
+            "rating": 4.6
+        },
+        {
+            "id": 12,
+            "name": "Sennheiser HD 650 Headphones",
+            "image":"/digitalImages/Accessecrios/Sennheiser HD 650 Headphones.jpg",
+            "price": "₹32,529",
+            "brand": "Sennheiser",
+            "description": "HD 650 Headphones deliver high-fidelity sound with open-back design for a natural listening experience.",
+            "rating": 4.8
+        },
+        {
+            "id": 13,
+            "name": "Bose QuietComfort 35 II",
+            "image":"/digitalImages/Accessecrios/Bose QuietComfort 35 II.jpg",
+            "price": "₹24,848",
+            "brand": "Bose",
+            "description": "QuietComfort 35 II features industry-leading noise cancellation, comfortable fit, and high-quality audio.",
+            "rating": 4.7
+        },
+        {
+            "id": 14,
+            "name": "Anker Soundcore Life P3",
+            "image":"/digitalImages/Accessecrios/Anker Soundcore Life P3.jpg",
+            "price": "₹6,547",
+            "brand": "Anker",
+            "description": "Soundcore Life P3 offers balanced sound with customizable EQ settings and a comfortable fit.",
+            "rating": 4.4
+        },
+        {
+            "id": 15,
+            "name": "Apple Watch Series 8",
+            "image":"/digitalImages/Accessecrios/Apple Watch Series 8.jpg",
+            "price": "₹32,529",
+            "brand": "Apple",
+            "description": "Apple Watch Series 8 provides comprehensive health tracking, advanced features, and a sleek design.",
+            "rating": 4.8
+        },
+        {
+            "id": 16,
+            "name": "Fitbit Charge 5",
+            "image":"/digitalImages/Accessecrios/Fitbit Charge 5.jpg",
+            "price": "₹14,739",
+            "brand": "Fitbit",
+            "description": "Charge 5 offers advanced health and fitness tracking, built-in GPS, and a bright AMOLED display.",
+            "rating": 4.6
+        },
+        {
+            "id": 17,
+            "name": "Garmin Venu 2",
+            "image":"/digitalImages/Accessecrios/Garmin Venu 2.jpg",
+            "price": "₹25,877",
+            "brand": "Garmin",
+            "description": "Venu 2 features a bright AMOLED display, comprehensive health tracking, and up to 11 days of battery life.",
+            "rating": 4.7
+        },
+        {
+            "id": 18,
+            "name": "Sony WH-1000XM4",
+            "image":"/digitalImages/Accessecrios/Sony WH-1000XM4.jpg",
+            "price": "₹25,877",
+            "brand": "Sony",
+            "description": "WH-1000XM4 offers industry-leading noise cancellation, superior sound quality, and comfortable fit.",
+            "rating": 4.8
+        },
+        {
+            "id": 19,
+            "name": "Logitech G Pro X Gaming Headset",
+            "image":"/digitalImages/Accessecrios/Logitech G Pro X Gaming Headset.jpg",
+            "price": "₹10,178",
+            "brand": "Logitech",
+            "description": "G Pro X Gaming Headset features Blue VO!CE microphone technology, customizable sound profiles, and durable design.",
+            "rating": 4.5
+        },
+        {
+            "id": 20,
+            "name": "Jabra Elite 85h",
+            "image":"/digitalImages/Accessecrios/Jabra Elite 85h.jpg",
+            "price": "₹24,848",
+            "brand": "Jabra",
+            "description": "Elite 85h provides excellent noise cancellation, superior sound quality, and a comfortable, durable design.",
+            "rating": 4.7
+        }
+    ],
+    "homeAppliances": [
+        {
+            "id": 1,
+            "name": "Dyson V11 Vacuum Cleaner",
+            "image":"/digitalImages/Home/Dyson V11 Vacuum Cleaner.jpg",
+            "price": "₹49,392",
+            "brand": "Dyson",
+            "description": "Dyson V11 offers powerful suction, advanced filtration, and versatile cleaning with a cordless design.",
+            "rating": 4.7
+        },
+        {
+            "id": 2,
+            "name": "Nespresso VertuoPlus Coffee Maker",
+            "image":"/digitalImages/Home/Nespresso VertuoPlus Coffee Maker.jpg",
+            "price": "₹20,747",
+            "brand": "Nespresso",
+            "description": "VertuoPlus Coffee Maker provides a range of coffee sizes with a single button operation and rich crema.",
+            "rating": 4.6
+        },
+        {
+            "id": 3,
+            "name": "Roomba i7+ Robot Vacuum",
+            "image":"/digitalImages/Home/Roomba i7+ Robot Vacuum.jpg",
+            "price": "₹55,348",
+            "brand": "iRobot",
+            "description": "Roomba i7+ includes smart mapping and automatic dirt disposal for efficient, hands-free cleaning.",
+            "rating": 4.8
+        },
+        {
+            "id": 4,
+            "name": "LG OLED C1 65-Inch TV",
+            "image":"/digitalImages/Home/LG OLED C1 65-Inch TV.jpg",
+            "price": "₹2,49,753",
+            "brand": "LG",
+            "description": "OLED C1 delivers stunning picture quality with self-lighting OLED technology and Dolby Vision support.",
+            "rating": 4.9
+        },
+        {
+            "id": 5,
+            "name": "Samsung Refrigerator 500L",
+            "image":"/digitalImages/Home/Samsung Refrigerator 500L.jpg",
+            "price": "₹62,104",
+            "brand": "Samsung",
+            "description": "Samsung Refrigerator 500L features spacious storage, energy efficiency, and advanced cooling technology.",
+            "rating": 4.6
+        },
+        {
+            "id": 6,
+            "name": "Philips Air Fryer HD9650",
+            "image":"/digitalImages/Home/Philips Air Fryer HD9650.jpg",
+            "price": "₹19,923",
+            "brand": "Philips",
+            "description": "Air Fryer HD9650 offers rapid air technology for crispy, delicious fried foods with less oil.",
+            "rating": 4.7
+        },
+        {
+            "id": 7,
+            "name": "Breville Barista Express Espresso Machine",
+            "image":"/digitalImages/Home/Breville Barista Express Espresso Machine.jpg",
+            "price": "₹80,467",
+            "brand": "Breville",
+            "description": "Barista Express delivers café-quality espresso with built-in conical burr grinder and steam wand.",
+            "rating": 4.8
+        },
+        {
+            "id": 8,
+            "name": "Samsung 8KG Washing Machine",
+            "image":"/digitalImages/Home/Samsung 8KG Washing Machine.jpg",
+            "price": "₹39,248",
+            "brand": "Samsung",
+            "description": "Samsung Washing Machine 8KG offers efficient cleaning with smart features and energy-saving technology.",
+            "rating": 4.6
+        },
+        {
+            "id": 9,
+            "name": "Whirlpool 1.5 Ton Inverter AC",
+            "image":"/digitalImages/Home/Whirlpool 1.5 Ton Inverter AC.jpg",
+            "price": "₹45,923",
+            "brand": "Whirlpool",
+            "description": "1.5 Ton Inverter AC provides efficient cooling, energy savings, and quiet operation for comfort in any season.",
+            "rating": 4.5
+        },
+        {
+            "id": 10,
+            "name": "Sony PlayStation 5",
+            "image":"/digitalImages/Home/Sony PlayStation 5.jpg",
+            "price": "₹49,392",
+            "brand": "Sony",
+            "description": "PlayStation 5 offers next-gen gaming with powerful hardware, fast load times, and a stunning library of games.",
+            "rating": 4.8
+        },
+        {
+            "id": 11,
+            "name": "Dyson Air Purifier TP07",
+            "image":"/digitalImages/Home/Dy sonAir Purifier TP07.jpg",
+            "price": "₹41,391",
+            "brand": "Dyson",
+            "description": "Air Purifier TP07 features advanced filtration and oscillation for clean, fresh air in any room.",
+            "rating": 4.7
+        },
+        {
+            "id": 12,
+            "name": "LG Washing Machine 7KG",
+            "image":"/digitalImages/Home/LG Washing Machine 7KG.jpg",
+            "price": "₹31,845",
+            "brand": "LG",
+            "description": "LG Washing Machine 7KG provides efficient and thorough cleaning with smart features and energy efficiency.",
+            "rating": 4.6
+        },
+        {
+            "id": 13,
+            "name": "Philips Sonicare Electric Toothbrush",
+            "image":"/digitalImages/Home/Philips Sonicare Electric Toothbrush.jpg",
+            "price": "₹12,377",
+            "brand": "Philips",
+            "description": "Sonicare Electric Toothbrush offers superior cleaning with sonic technology and multiple brushing modes.",
+            "rating": 4.8
+        },
+        {
+            "id": 14,
+            "name": "Breville Smart Oven Pro",
+            "image":"/digitalImages/Home/Breville Smart Oven Pro.jpg",
+            "price": "₹33,204",
+            "brand": "Breville",
+            "description": "Smart Oven Pro includes multiple cooking functions with an easy-to-use interface and convection heating.",
+            "rating": 4.7
+        },
+        {
+            "id": 15,
+            "name": "Kenwood Stand Mixer",
+            "image":"/digitalImages/Home/Kenwood Stand Mixer.jpg",
+            "price": "₹21,494",
+            "brand": "Kenwood",
+            "description": "Stand Mixer offers powerful performance and versatility for baking and cooking enthusiasts.",
+            "rating": 4.6
+        },
+        {
+            "id": 16,
+            "name": "Xiaomi Mi Air Purifier 3",
+            "image":"/digitalImages/Home/Xiaomi Mi Air Purifier 3.jpg",
+            "price": "₹9,799",
+            "brand": "Xiaomi",
+            "description": "Mi Air Purifier 3 provides efficient air purification with a sleek design and smart connectivity.",
+            "rating": 4.5
+        },
+        {
+            "id": 17,
+            "name": "Panasonic Microwave Oven NN-SN966S",
+            "image":"/digitalImages/Home/Panasonic Microwave Oven NN-SN966S.jpg",
+            "price": "₹26,975",
+            "brand": "Panasonic",
+            "description": "Microwave Oven NN-SN966S features inverter technology for even cooking and advanced sensor cooking modes.",
+            "rating": 4.6
+        },
+        {
+            "id": 18,
+            "name": "Braun MultiQuick 7 Hand Blender",
+            "image":"/digitalImages/Home/Braun MultiQuick 7 Hand Blender.jpg",
+            "price": "₹8,606",
+            "brand": "Braun",
+            "description": "MultiQuick 7 Hand Blender offers versatile blending with powerful performance and ergonomic design.",
+            "rating": 4.7
+        },
+        {
+            "id": 19,
+            "name": "TCL 55-Inch 4K TV",
+            "image":"/digitalImages/Home/TCL 55-Inch 4K TV.jpg",
+            "price": "₹67,093",
+            "brand": "TCL",
+            "description": "55-Inch 4K TV offers sharp picture quality, smart features, and immersive viewing experience.",
+            "rating": 4.6
+        },
+        {
+            "id": 20,
+            "name": "Eureka Forbes Water Purifier",
+            "image":"/digitalImages/Home/Eureka Forbes Water Purifier.jpg",
+            "price": "₹16,092",
+            "brand": "Eureka Forbes",
+            "description": "Water Purifier provides clean, safe drinking water with advanced filtration and purification technology.",
+            "rating": 4.5
+        }
+    ]
+}
